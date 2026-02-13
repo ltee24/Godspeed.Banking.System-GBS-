@@ -1,0 +1,6 @@
+@GBS.AuthApi.Service_HostAddress = http://localhost:5072
+
+GET {{GBS.AuthApi.Service_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
