@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace GBS.AuthApi.Service.Migrations
+namespace GBS.Services.AuthApi.Migrations
 {
     /// <inheritdoc />
     public partial class identityTables : Migration

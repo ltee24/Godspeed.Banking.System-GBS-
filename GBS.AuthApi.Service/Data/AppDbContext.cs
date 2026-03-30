@@ -1,8 +1,8 @@
-﻿using GBS.AuthApi.Service.Models;
+﻿using GBS.Services.AuthApi.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace GBS.AuthApi.Service.Data
+namespace GBS.Services.AuthApi.Data
 {
     public class AppDbContext:IdentityDbContext<GodSpeedUser>
     {

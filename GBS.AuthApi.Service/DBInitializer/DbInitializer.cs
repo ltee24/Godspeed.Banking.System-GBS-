@@ -1,10 +1,10 @@
-﻿using GBS.AuthApi.Service.Data;
-using GBS.AuthApi.Service.Models;
-using GBS.AuthApi.Service.Utility;
+﻿using GBS.AuthApi.Service.Utility;
+using GBS.Services.AuthApi.Data;
+using GBS.Services.AuthApi.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
-namespace GBS.AuthApi.Service.DBInitializer
+namespace GBS.Services.AuthApi.DBInitializer
 {
     public class DbInitializer : IDbInitializer
     {

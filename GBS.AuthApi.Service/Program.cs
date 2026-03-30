@@ -1,6 +1,9 @@
-using GBS.AuthApi.Service.Data;
-using GBS.AuthApi.Service.DBInitializer;
-using GBS.AuthApi.Service.Models;
+using GBS.AuthApi.Service.Service;
+using GBS.Services.AuthApi.Data;
+using GBS.Services.AuthApi.DBInitializer;
+using GBS.Services.AuthApi.Models;
+using GBS.Services.AuthApi.Service;
+using GBS.Services.AuthApi.Service.IService;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,6 +17,9 @@ builder.Services.AddDbContext<AppDbContext>(option =>
 });
 builder.Services.AddIdentity<GodSpeedUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
 builder.Services.AddScoped<IDbInitializer,DbInitializer>();
+builder.Services.AddScoped<IAuthService,AuthService>();
+builder.Services.AddScoped<IJwtTokenGenerator,JwtTokenGenerator>();
+builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection("ApiSettings:JwtOptions"));
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

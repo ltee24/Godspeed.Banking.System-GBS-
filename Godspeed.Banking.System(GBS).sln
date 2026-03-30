@@ -5,7 +5,13 @@ VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GBS.AuthApi.Service", "GBS.AuthApi.Service\GBS.AuthApi.Service.csproj", "{58511E59-71E0-40A4-A0D7-32CADDDF321E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GBS.Services.AuthApi", "GBS.AuthApi.Service\GBS.Services.AuthApi.csproj", "{58511E59-71E0-40A4-A0D7-32CADDDF321E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GBS.Services.AccountApi", "Gospeed.Services.TransactionApi\GBS.Services.AccountApi.csproj", "{170E8B16-620C-427C-9903-B18879F5C3B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GBS.Services.TransactionApi", "GBS.Services.TransactionApi\GBS.Services.TransactionApi.csproj", "{418B55BB-48C2-4318-ABB6-21F1DF85AA4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GBS.Services.LedgerApi", "GBS.Services.LedgerApi\GBS.Services.LedgerApi.csproj", "{B35C9057-41CE-476E-97C2-A133AFE26A2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +23,27 @@ Global
 		{58511E59-71E0-40A4-A0D7-32CADDDF321E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58511E59-71E0-40A4-A0D7-32CADDDF321E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58511E59-71E0-40A4-A0D7-32CADDDF321E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{170E8B16-620C-427C-9903-B18879F5C3B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{170E8B16-620C-427C-9903-B18879F5C3B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{170E8B16-620C-427C-9903-B18879F5C3B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{170E8B16-620C-427C-9903-B18879F5C3B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{418B55BB-48C2-4318-ABB6-21F1DF85AA4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{418B55BB-48C2-4318-ABB6-21F1DF85AA4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{418B55BB-48C2-4318-ABB6-21F1DF85AA4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{418B55BB-48C2-4318-ABB6-21F1DF85AA4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B35C9057-41CE-476E-97C2-A133AFE26A2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B35C9057-41CE-476E-97C2-A133AFE26A2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B35C9057-41CE-476E-97C2-A133AFE26A2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B35C9057-41CE-476E-97C2-A133AFE26A2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{58511E59-71E0-40A4-A0D7-32CADDDF321E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{170E8B16-620C-427C-9903-B18879F5C3B1} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{418B55BB-48C2-4318-ABB6-21F1DF85AA4D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{B35C9057-41CE-476E-97C2-A133AFE26A2E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {41675EFB-1018-4B3F-9BF8-332A334E5E27}

@@ -1,4 +1,4 @@
-﻿namespace GBS.AuthApi.Service.DBInitializer
+﻿namespace GBS.Services.AuthApi.DBInitializer
 {
     public interface IDbInitializer
     {
